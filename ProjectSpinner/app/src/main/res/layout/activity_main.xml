@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.user.projectspinner.MainActivity">
+
+    <TextView
+        android:id="@+id/txtwilayah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTahun"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="53dp"
+        android:text="Wilayah"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spProvinsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spKota"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="230dp"
+        android:entries="@array/provinsi" />
+
+    <Spinner
+        android:id="@+id/spKota"
+        android:entries="@array/kota"
+        android:layout_below="@+id/txtwilayah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="200dp" />
+
+    <TextView
+        android:id="@+id/txtBiodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Biodata Singkat"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editNama"
+        android:hint="Nama"
+        android:layout_below="@+id/txtBiodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="0dp" />
+
+    <EditText
+        android:id="@+id/editTahun"
+        android:layout_below="@+id/editNama"
+        android:hint="Tahun Lahir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="0dp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="86dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/spProvinsi"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="164dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/txtHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="395dp"
+        android:text="Hasil" />
+
+</RelativeLayout>
